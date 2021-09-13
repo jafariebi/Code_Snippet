@@ -14,10 +14,10 @@ if ( is_plugin_active( 'wp-parsidate/wp-parsidate.php' ) ) {
 		    remove_filter('wp_date', 'wpp_fix_i18n', 10, 4);
 	}else{
 		function general_admin_notice(){
-         echo '<div class="notice notice-error is-dismissible">
-             <p> افزونه پارسی دیت نصب /فعال نشده، و به جهت اعمال خودکار تاریخ شمسی و میلادی در زبان فارسی و غیر فارسی لازم است افزونه Parsidate و Translatepress نصب و فعال شوند </p>
-         </div>';
-		add_action('admin_notices', 'general_admin_notice');		
-		}
+         		echo '<div class="notice notice-error is-dismissible">
+             		<p> افزونه پارسی دیت نصب /فعال نشده، و به جهت اعمال خودکار تاریخ شمسی و میلادی در زبان فارسی و غیر فارسی لازم است افزونه Parsidate و Translatepress نصب و فعال شوند </p>
+         		</div>';		
+			}
+		add_action('admin_notices', 'general_admin_notice');
 	}
 }
